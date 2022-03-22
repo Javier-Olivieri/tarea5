@@ -1,0 +1,37 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <main class="container">
+        <div class="row">
+            <h1 class="col">
+                AGREGAR ITEMS
+            </h1>
+        </div>
+        <form action="/productos" method="POST" class="form-width">
+            <div class="form-group">
+                <label for="title">Titulo</label>
+                <input type="text" class="form-control" name="title" placeholder="Ingresar titulo" required />
+            </div>
+            <div class="form-group">
+                <label for="price">Precio</label>
+                <input type="number" class="form-control" name="price" placeholder="Ingresar precio" required />
+            </div>
+            <div class="form-group">
+                <label for="thumbnail">Thumbnail</label>
+                <input type="url" class="form-control" name="thumbnail" placeholder="Ingresar url thumbnail" required />
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+
+        <a class="btn btn-primary mt-4" href="/productos">IR A PRODUCTOS</a>
+
+    </main>
+</body>
+
+</html>
